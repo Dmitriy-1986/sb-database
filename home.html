@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <title>Головна</title>
+  </head>
+  <body>
+     
+    <div class="container bg-white win-100vh">
+      <div class="row">
+
+        <h2 class="mt-3">Головна Сторінка</h2>
+        <hr><br>
+
+        <div class="container bg-white">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Пошук</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Внести в базу</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+
+            <!-- Перевірити особу -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <form  class="mt-5">
+                <fieldset>
+                  <legend>Пошук особи:</legend>
+
+                    <div class="mb-3">
+                      <label for="surname-and-name" class="form-label">Прізвище та ім'я:</label>
+                        <input type="text" class="form-control" id="surname-and-name" placeholder="Введіть прізвище та ім'я">
+                    </div>
+
+                  <div class="mb-3">
+                    <label for="date-of-birth" class="form-label">Дата народження:</label>
+                    <input type="text" class="form-control" id="date-of-birth" placeholder="Введіть дату народження">
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Відправити</button>
+                </fieldset> 
+              </form> 
+              <h3 class="mt-3">Результати пошуку:</h3>
+                      <table class="table table-bordered border-secondary" style="margin-bottom: 0;">
+                        <tbody>
+                          <tr>
+                              <td colspan="2">
+                                <div class="text-center">
+                                  <img src="./assets/images/wanted.png" class="rounded" alt="IMG">
+                                </div>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td class="w-15">Прізвище та ім'я</td>
+                              <td class="fw-bold">Іванов Іван</td>
+                          </tr>
+                          <tr>
+                              <td class="w-15">Дата народження</td>
+                              <td class="fw-bold">01.01.2000 р.н.</td>
+                          </tr>
+                          <tr>
+                              <td class="w-15">Громадянство</td>
+                              <td class="fw-bold">України</td>
+                          </tr>
+                           <tr>
+                              <td class="w-15">Національність</td>
+                              <td class="fw-bold">Турок</td>
+                          </tr>
+                          <tr>
+                              <td class="w-15">Місце проживання</td>
+                              <td class="fw-bold">місто Київ, вул. Володимирівська, 1</td>
+                          </tr>
+                           <tr>
+                              <td class="w-15">Місце реєстрації</td>
+                              <td class="fw-bold">місто Севастополь, вул. Велика морська, 2</td>
+                          </tr>
+                          <tr>
+                              <td class="w-15">Фізичний опис</td>
+                              <td class="fw-bold">Високий з мускулистою будовою тіла. Має коротко вирізану бороду та короткі волосся. Часто носить темний одяг і сонцезахисні окуляри.</td>
+                          </tr>
+                           <tr>
+                              <td class="w-15">Примітні риси</td>
+                              <td class="fw-bold">Відомий своєю причетністю до радикальних турецьких націоналістичних груп. Він володіє широким спектром навичок, включаючи володіння зброєю, організацію та планування атак, а також підпільну діяльність.</td>
+                          </tr>
+                          <tr>
+                              <td class="w-15">Злочинні дії</td>
+                              <td class="fw-bold">Звинувачується у вчиненні різноманітних протиправних дій, включаючи терористичні акти, вбивства, підривну діяльність та незаконний обіг зброї. Є членом радикальної турецької націоналістичної організаці.</td>
+                          </tr>
+                           <tr>
+                              <td class="w-15">Інше</td>
+                              <td class="fw-bold">Не має</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <br><br>
+
+                      <div class="container pagination-block">
+                        <nav aria-label="...">
+                          <ul class="pagination pagination-sm">
+                            <li class="page-item active" aria-current="page">
+                              <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <br><br><br>
+            </div>
+
+            <!-- Внести в базу -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <form  class="mt-5">
+                <fieldset>
+                  <legend>Внесення в базу:</legend>
+
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Завантажити зображення:</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="surname-and-name" class="form-label">Прізвище та ім'я:</label>
+                        <input type="text" class="form-control" id="surname-and-name" placeholder="Внесіть прізвище та ім'я">
+                    </div>
+
+                  <div class="mb-3">
+                    <label for="date-of-birth" class="form-label">Дата народження:</label>
+                    <input type="text" class="form-control" id="date-of-birth" placeholder="Внесіть дату народження">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="date-of-birth" class="form-label">Громадянство:</label>
+                    <input type="text" class="form-control" id="date-of-birth" placeholder="Внесіть громадянство">
+                  </div>
+
+
+                  <div class="mb-3">
+                    <label for="date-of-birth" class="form-label">Національність:</label>
+                    <input type="text" class="form-control" id="date-of-birth" placeholder="Внесіть національність">
+                  </div>
+
+
+                  <div class="mb-3">
+                    <label for="date-of-birth" class="form-label">Місце проживання:</label>
+                    <input type="text" class="form-control" id="date-of-birth" placeholder="Внесіть місце проживання">
+                  </div>
+
+
+                  <div class="mb-3">
+                    <label for="date-of-birth" class="form-label">Місце реєстрації:</label>
+                    <input type="text" class="form-control" id="date-of-birth" placeholder="Внесіть місце реєстрації">
+                  </div>
+
+
+                  <div class="mb-3">
+                    <label for="date-of-birth" class="form-label">Фізичний опис:</label>
+                    <input type="text" class="form-control" id="date-of-birth" placeholder="Внесіть фізичний опис">
+                  </div>
+
+
+                  <div class="mb-3">
+                    <label for="date-of-birth" class="form-label">Примітні риси:</label>
+                    <input type="text" class="form-control" id="date-of-birth" placeholder="Внесіть примітні риси">
+                  </div>
+
+
+                  <div class="mb-3">
+                    <label for="date-of-birth" class="form-label">Злочинні дії:</label>
+                    <input type="text" class="form-control" id="date-of-birth" placeholder="Злочинні дії">
+                  </div>
+
+
+                 <p style="margin-bottom: 8px;">Інше:</p>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Внесіть інше</label>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Відправити</button>
+                </fieldset> 
+              </form> 
+              <br><br><br>
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+
+
+    
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <!--<script src="./assets/javascript/script.js"></script>-->
+  </body>
+</html>
